@@ -1005,14 +1005,32 @@ footer{
     }
 
 
-    .hero-sub{
+   .hero-sub{
 
-        font-size:16px;
+    font-size:16px;
 
-        line-height:1.7;
+    line-height:1.7;
 
-        max-width:min(320px, 80%);
+    max-width:min(320px, 80%);
 
-    }
+}
+
+
+.service-container {
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+.service-block {
+
+    width:100%;
+
+    padding:24px;
+
+}
 
 }
