@@ -1005,7 +1005,7 @@ footer{
     }
 
 
-    .hero-sub{
+      .hero-sub{
 
         font-size:16px;
 
@@ -1013,27 +1013,6 @@ footer{
 
         max-width:min(320px, 80%);
 
-    }
-
-}
-
-@media(max-width:768px){
-
-    .service-container{
-        display:block;
-        width:100%;
-    }
-
-    .service-block{
-        width:100%;
-        max-width:100%;
-        padding:24px;
-        margin:0;
-    }
-
-    .accordion{
-        width:100%;
-        max-width:100%;
     }
 
 }
