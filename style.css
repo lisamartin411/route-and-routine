@@ -505,29 +505,30 @@ section {
 .accordion {
 
     width: 100%;
-
     padding: 18px;
-
     margin-top: 12px;
 
     background: var(--stone);
 
     border: none;
-
     border-radius: 14px;
 
     text-align: left;
 
     font-size: 15px;
-
     font-weight: 600;
 
-    cursor: pointer;
+    color: var(--charcoal);
 
+    font-family: "Nunito", sans-serif;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    cursor: pointer;
     transition: .25s;
 
 }
-
 
 .accordion:hover {
 
