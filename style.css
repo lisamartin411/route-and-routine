@@ -866,12 +866,16 @@ footer{
     nav{
 
         display:flex;
-
         justify-content:space-between;
-
         align-items:center;
-
         padding:18px 8%;
+
+    }
+
+
+    .logo{
+
+        font-size:clamp(20px, 6vw, 26px);
 
     }
 
@@ -886,31 +890,18 @@ footer{
     .nav-links{
 
         position:absolute;
-
         top:100%;
-
         left:0;
-
         width:100%;
-
         background:var(--cream);
-
         display:flex;
-
         flex-direction:column;
-
         align-items:center;
-
         gap:20px;
-
         overflow:hidden;
-
         max-height:0;
-
         opacity:0;
-
         padding:0;
-
         box-shadow:none;
 
         transition:
@@ -925,9 +916,7 @@ footer{
     .nav-links.active{
 
         max-height:320px;
-
         opacity:1;
-
         padding:24px;
 
         box-shadow:
@@ -939,11 +928,8 @@ footer{
     .nav-links a{
 
         width:100%;
-
         padding:14px 0;
-
         text-align:center;
-
         font-size:18px;
 
     }
@@ -952,17 +938,11 @@ footer{
     .hero{
 
         position:relative;
-
         height:70vh;
-
         min-height:500px;
-
         display:flex;
-
         align-items:flex-start;
-
         padding-top:90px;
-
         overflow:hidden;
 
     }
@@ -971,13 +951,9 @@ footer{
     .hero img{
 
         position:absolute;
-
         inset:0;
-
         width:100%;
-
         height:100%;
-
         object-fit:cover;
 
     }
@@ -986,11 +962,8 @@ footer{
     .hero-text{
 
         margin-left:8%;
-
         max-width:90%;
-
         padding-bottom:20px;
-
         transform:translateY(-60px);
 
     }
@@ -999,19 +972,31 @@ footer{
     .hero h1{
 
         font-size:clamp(28px, 6vw, 44px);
-
         line-height:1.1;
 
     }
 
 
-      .hero-sub{
+    .hero-sub{
 
         font-size:16px;
-
         line-height:1.7;
-
         max-width:min(320px, 80%);
+
+    }
+
+
+    .service-block{
+
+        padding:28px;
+
+    }
+
+
+    .accordion{
+
+        padding:16px;
+        font-size:16px;
 
     }
 
