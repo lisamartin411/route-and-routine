@@ -123,6 +123,13 @@ nav {
 
 }
 
+.logo a {
+
+    color: var(--forest);
+
+    text-decoration: none;
+
+}
 
 .nav-links {
 
