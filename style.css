@@ -131,6 +131,24 @@ nav {
 
 }
 
+
+.logo a:visited {
+
+    color: var(--forest);
+
+    text-decoration: none;
+
+}
+
+
+.logo a:hover {
+
+    color: var(--forest);
+
+    text-decoration: none;
+
+}
+
 .nav-links {
 
     display: flex;
