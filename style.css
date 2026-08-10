@@ -149,6 +149,12 @@ nav {
 
 }
 
+.logo img {
+    display: block;
+    width: 180px;
+    height: auto;
+}
+
 .nav-links {
 
     display: flex;
