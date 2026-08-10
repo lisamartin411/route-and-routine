@@ -125,12 +125,17 @@ nav {
 
 .logo a {
 
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
     color: var(--forest);
 
     text-decoration: none;
 
 }
-
 
 .logo a:visited {
 
@@ -139,7 +144,6 @@ nav {
     text-decoration: none;
 
 }
-
 
 .logo a:hover {
 
@@ -150,9 +154,25 @@ nav {
 }
 
 .logo img {
+
     display: block;
-    width: 80px;
+
+    width: 50px;
+
     height: auto;
+
+}
+
+.logo span {
+
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 26px;
+
+    font-weight: 700;
+
+    color: var(--forest);
+
 }
 
 .nav-links {
@@ -162,7 +182,6 @@ nav {
     gap: 28px;
 
 }
-
 
 .nav-links a {
 
