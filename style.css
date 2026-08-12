@@ -115,17 +115,11 @@ nav {
 
 .logo {
 
-    font-size: 26px;
+    font-size:26px;
 
-    font-weight: 700;
+    font-weight:700;
 
-    color: var(--forest);
-
-    display:flex;
-
-    align-items:center;
-
-    gap:10px;
+    color:var(--forest);
 
 }
 
