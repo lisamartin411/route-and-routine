@@ -1033,17 +1033,25 @@ footer{
     }
 
 
-    .hero-text{
+.hero-text{
 
-        margin-left:8%;
+    position:absolute;
 
-        max-width:90%;
+    left:8%;
 
-        padding-bottom:20px;
+    bottom:80px;
 
-        transform:translateY(-60px);
+    margin-left:0;
 
-    }
+    max-width:84%;
+
+    padding-bottom:0;
+
+    transform:none;
+
+    z-index:2;
+
+}
 
 
     .hero h1{
