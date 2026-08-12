@@ -993,14 +993,13 @@ footer{
 
     display:flex;
 
-    align-items:flex-end;
+    align-items:center;
 
-    padding-bottom:90px;
+    padding-bottom:0;
 
     overflow:hidden;
 
 }
-
     .hero img{
 
         position:absolute;
@@ -1018,15 +1017,13 @@ footer{
 
 .hero-text{
 
-    margin-left:8%;
+    position:relative;
 
-    margin-right:8%;
+    z-index:2;
 
     max-width:90%;
 
-    padding-bottom:0;
-
-    transform:none;
+    margin-left:8%;
 
 }
 
