@@ -1057,3 +1057,56 @@ footer{
     }
 
 }
+
+/* ==========================
+   THANK YOU PAGE
+========================== */
+
+.thank-you-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 8%;
+    background: var(--cream);
+    text-align: center;
+}
+
+.thank-you-content {
+    max-width: 650px;
+    padding: 60px 40px;
+}
+
+.thank-you-content h1 {
+    margin-bottom: 25px;
+    color: var(--forest-dark);
+    font-size: clamp(42px, 6vw, 64px);
+    font-weight: 700;
+}
+
+.thank-you-content p {
+    margin: 0 auto 18px;
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.thank-you-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: var(--forest);
+    color: var(--cream);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.thank-you-button:hover,
+.thank-you-button:focus,
+.thank-you-button:active {
+    background: var(--sage);
+    color: var(--forest-dark);
+    text-decoration: none;
+}
