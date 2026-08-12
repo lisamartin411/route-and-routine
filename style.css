@@ -1096,3 +1096,20 @@ footer{
     }
 
 }
+
+@media (max-width: 768px) {
+
+    .hero .hero-text {
+        position: absolute !important;
+        top: auto !important;
+        bottom: 40px !important;
+        left: 8% !important;
+        right: 8% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform: none !important;
+        max-width: none !important;
+        z-index: 10 !important;
+    }
+
+}
