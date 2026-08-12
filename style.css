@@ -125,17 +125,12 @@ nav {
 
 .logo a {
 
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
     color: var(--forest);
 
     text-decoration: none;
 
 }
+
 
 .logo a:visited {
 
@@ -145,33 +140,12 @@ nav {
 
 }
 
+
 .logo a:hover {
 
     color: var(--forest);
 
     text-decoration: none;
-
-}
-
-.logo img {
-
-    display: block;
-
-    width: 50px;
-
-    height: auto;
-
-}
-
-.logo span {
-
-    font-family: "Quicksand", sans-serif;
-
-    font-size: 26px;
-
-    font-weight: 700;
-
-    color: var(--forest);
 
 }
 
@@ -182,6 +156,7 @@ nav {
     gap: 28px;
 
 }
+
 
 .nav-links a {
 
@@ -1033,25 +1008,17 @@ footer{
     }
 
 
-.hero-text{
+    .hero-text{
 
-    position:absolute;
+        margin-left:8%;
 
-    left:8%;
+        max-width:90%;
 
-    bottom:60px;
+        padding-bottom:20px;
 
-    max-width:84%;
+        transform:translateY(-60px);
 
-    margin:0;
-
-    padding:0;
-
-    transform:none;
-
-    z-index:2;
-
-}
+    }
 
 
     .hero h1{
@@ -1071,45 +1038,6 @@ footer{
 
         max-width:min(320px, 80%);
 
-    }
-
-}
-
-/* ==========================
-   DESKTOP LOGO
-========================== */
-
-@media(min-width:769px){
-
-    .logo a {
-
-        display: flex;
-
-        flex-direction: row;
-
-        align-items: center;
-
-        gap: 10px;
-
-        white-space: nowrap;
-
-    }
-
-}
-
-@media (max-width: 768px) {
-
-    .hero .hero-text {
-        position: absolute !important;
-        top: auto !important;
-        bottom: 40px !important;
-        left: 8% !important;
-        right: 8% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        transform: none !important;
-        max-width: none !important;
-        z-index: 10 !important;
     }
 
 }
