@@ -1027,13 +1027,15 @@ footer{
 
 }
 
-    .hero h1{
+.hero h1{
 
-        font-size:clamp(28px, 6vw, 44px);
+    font-size:clamp(28px, 6vw, 44px);
 
-        line-height:1.1;
+    line-height:1.1;
 
-    }
+    max-width:260px;
+
+}
 
 
       .hero-sub{
