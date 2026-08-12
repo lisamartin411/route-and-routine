@@ -983,24 +983,23 @@ footer{
     }
 
 
-    .hero{
+.hero{
 
-        position:relative;
+    position:relative;
 
-        height:70vh;
+    height:70vh;
 
-        min-height:500px;
+    min-height:500px;
 
-        display:flex;
+    display:flex;
 
-        align-items:flex-start;
+    align-items:flex-end;
 
-        padding-top:90px;
+    padding-bottom:90px;
 
-        overflow:hidden;
+    overflow:hidden;
 
-    }
-
+}
 
     .hero img{
 
@@ -1017,18 +1016,19 @@ footer{
     }
 
 
-    .hero-text{
+.hero-text{
 
-        margin-left:8%;
+    margin-left:8%;
 
-        max-width:90%;
+    margin-right:8%;
 
-        padding-bottom:20px;
+    max-width:90%;
 
-        transform:translateY(-60px);
+    padding-bottom:0;
 
-    }
+    transform:none;
 
+}
 
     .hero h1{
 
