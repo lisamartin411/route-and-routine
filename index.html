@@ -23,10 +23,7 @@ rel="stylesheet">
 <nav>
 
 <h2 class="logo">
-    <a href="index.html">
-        <img src="logo.png" alt="">
-        <span>Route & Routine</span>
-    </a>
+<a href="index.html">Route & Routine</a>
 </h2>
 
 <button
@@ -41,6 +38,8 @@ aria-expanded="false">
 <a href="#services">
 Services
 </a>
+
+<a href="packages.html">Packages</a>
 
 <a href="#about-me">
 About Me
@@ -141,6 +140,10 @@ Contact
                     memorable experiences.
                 </p>
 
+                <a href="packages.html#travel" class="package-button">
+    View Packages
+</a>
+
             </div>
 
 
@@ -162,6 +165,10 @@ Contact
                     support is available to coordinate the details and
                     create experiences that feel personal and effortless.
                 </p>
+
+                <a href="packages.html#occasions" class="package-button">
+    View Packages
+</a>
 
             </div>
 
@@ -198,6 +205,10 @@ Contact
                     helping everything run more smoothly.
                 </p>
 
+                <a href="packages.html#life" class="package-button">
+    View Packages
+</a>
+
             </div>
 
 
@@ -218,6 +229,10 @@ Contact
                     Whether you're buying your first home, relocating within the UK or moving internationally, 
                     support is available to help make the process feel organised, manageable and far less overwhelming.
                 </p>
+
+                <a href="packages.html#relocation" class="package-button">
+    View Packages
+</a>
 
             </div>
 
@@ -375,12 +390,11 @@ Contact
     <div class="section-title">
 
         <h2>
-            Have something you'd rather not deal with?
+            Get in Touch
         </h2>
 
         <p>
-            Not sure what kind of support you need?
-            Tell us a little about what's taking up your time, and we'll recommend the most suitable way for Route & Routine to help.
+            Let's talk about what you need help with
         </p>
 
     </div>
@@ -536,7 +550,8 @@ Contact
         <textarea
             name="details"
             rows="6"
-            placeholder="Add any details you'd like us to know..."></textarea>
+            placeholder="Add any details you'd like us to know...">
+        </textarea>
 
         <p class="privacy-note">
           By submitting this form, you agree that your information will be handled in accordance with our 
@@ -545,7 +560,7 @@ Contact
 
         <button
             type="submit">
-            Let's talk about what you need help with.
+            Send Message
         </button>
 
     </form>
@@ -757,6 +772,33 @@ document
 
     });
 
+window.addEventListener("DOMContentLoaded", function() {
+
+    const hash = window.location.hash;
+
+    if (hash) {
+
+        const id = hash.substring(1);
+
+        const selectedList = document.getElementById(id);
+
+        if (selectedList) {
+
+            const button = document.querySelector(
+                '.package-category[onclick*="' + id + '"]'
+            );
+
+            if (button) {
+
+                showPackages(id, button);
+
+            }
+
+        }
+
+    }
+
+});
 
 </script>
 
