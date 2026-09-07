@@ -1,0 +1,1347 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Packages | Route & Routine</title>
+
+    <meta
+        name="description"
+        content="Explore Route & Routine's personalised travel, special occasion, life organisation and relocation packages."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <nav>
+
+        <div class="logo">
+
+            <a href="index.html">
+
+                <img src="favicon.png" alt="Route & Routine logo">
+
+                <span>Route & Routine</span>
+
+            </a>
+
+        </div>
+
+
+        <button
+            class="menu-toggle"
+            aria-label="Open menu"
+            onclick="toggleMenu()"
+        >
+            ☰
+        </button>
+
+
+        <div class="nav-links" id="navLinks">
+
+            <a href="index.html">Home</a>
+
+            <a href="index.html#services">Services</a>
+
+            <a href="packages.html">Packages</a>
+
+            <a href="index.html#about">About</a>
+
+            <a href="index.html#contact">Contact</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<section class="packages-intro">
+
+    <div class="section-title">
+
+        <h1>Packages</h1>
+
+        <h2>Choose the level of support that's right for you</h2>
+
+        <p>
+            Every package is tailored around your individual needs, so you get the support that's right for you
+            <strong>nothing you don't need, and nothing left out.</strong>
+        </p>
+
+        <p>
+            Our packages are available across <strong>three flexible tiers</strong>, allowing you to choose the level
+            of support that suits your plans, priorities and budget.
+        </p>
+
+    </div>
+
+
+    <div class="package-tiers">
+
+        <div class="package-tier">
+
+            <h3>Signature</h3>
+
+            <p>
+                A focused level of support, tailored to your needs.
+            </p>
+
+        </div>
+
+
+        <div class="package-tier">
+
+            <h3>Tailored</h3>
+
+            <p>
+                A more comprehensive level of support, tailored around what matters to you.
+            </p>
+
+        </div>
+
+
+        <div class="package-tier">
+
+            <h3>Bespoke</h3>
+
+            <p>
+                Most comprehensive level of support, built around your requirements.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="package-custom">
+
+        <h3>Don't see exactly what you need?</h3>
+
+        <p>
+            No problem. Our packages are designed to be flexible, but if you need something different,
+            <strong>get in touch and we'll discuss what you need and create a solution that's right for you.</strong>
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="packages-section">
+
+
+    <!-- ROUTE -->
+
+
+    <div class="package-area">
+
+        <p class="package-area-label">ROUTE</p>
+
+
+        <button
+            class="package-category"
+            onclick="showPackages('travel', this)"
+        >
+
+            <span>Travel Planning & Research</span>
+
+            <span class="package-arrow">+</span>
+
+        </button>
+
+
+        <div class="package-list" id="travel">
+
+
+<button class="package-item" onclick="togglePackage('first-time-traveller', this)">
+    <span>First-Time Traveller</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="first-time-traveller">
+
+    <p>
+        Your first trip doesn't have to feel daunting. Get the practical guidance
+        and personalised information you need to feel prepared and travel with confidence.
+    </p>
+
+    <h4>What your package can include:</h4>
+
+    <ul>
+        <li>Destination research</li>
+        <li>Accommodation research</li>
+        <li>Flights and transport options</li>
+        <li>Passport and visa requirements</li>
+        <li>Travel insurance guidance</li>
+        <li>Airport and flight preparation</li>
+        <li>Personalised packing checklist</li>
+        <li>Attractions and things to do</li>
+        <li>Restaurant recommendations</li>
+        <li>Local customs and tipping information</li>
+        <li>Currency and spending guidance</li>
+        <li>Local emergency information</li>
+    </ul>
+
+    <p class="package-note">
+        The above is just a selection of what your package can include. Every package is
+        tailored to your individual trip, and the exact planning and research
+        provided will depend on your requirements.
+    </p>
+
+    <p class="package-price">
+        From £75
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+     
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the
+        most suitable package for your trip.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('babys-first-holiday', this)">
+    <span>Baby's First Holiday</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="babys-first-holiday">
+
+    <p>
+        Planning your first holiday with a baby comes with a whole new set of things to consider.
+        Get the practical recommendations to help make your first family holiday feel more manageable.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Baby-friendly destination research</li>
+        <li>Accommodation research</li>
+        <li>Flights and transport options</li>
+        <li>Baby-friendly facilities and amenities</li>
+        <li>Travel and airport considerations</li>
+        <li>Baby packing checklist</li>
+        <li>Essential items to take</li>
+        <li>Travel equipment recommendations</li>
+        <li>Baby-friendly activities and experiences</li>
+        <li>Transfers and getting around</li>
+        <li>Travel insurance information</li>
+        <li>Practical tips for travelling with a baby</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your
+        individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £85
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+     
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package
+        for your holiday.
+    </p>
+
+</div>
+
+<button class="package-item" onclick="togglePackage('family-holiday', this)">
+    <span>Family Holiday (national/international)</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="family-holiday">
+
+    <p>
+        Planning a family holiday means balancing different ages, interests, routines and practical needs,
+        which can quickly become overwhelming. Get practical recommendations to help create a holiday that works for everyone.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Destination research</li>
+        <li>Family-friendly accommodation research</li>
+        <li>Flights and transport options</li>
+        <li>Family-friendly activities and attractions</li>
+        <li>Itinerary and day planning</li>
+        <li>Restaurants and family-friendly dining</li>
+        <li>Budget planning</li>
+        <li>Travel insurance information</li>
+        <li>Passport and visa requirements</li>
+        <li>Packing checklists</li>
+        <li>Child and family travel considerations</li>
+        <li>Travel times and logistics</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your
+        individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £100
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+     
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package
+        for your holiday.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('honeymoon', this)">
+    <span>Honeymoon</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="honeymoon">
+
+    <p>
+        Your honeymoon should be about enjoying the experience, not spending hours researching all the
+        little details that go into making it special. Get practical travel arrangements to help create
+        a honeymoon that feels personal and memorable.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Destination research</li>
+        <li>Honeymoon accommodation research</li>
+        <li>Flights and transport options</li>
+        <li>Airport transfers</li>
+        <li>Romantic experiences and activities</li>
+        <li>Excursions and day trips</li>
+        <li>Restaurants and special dining experiences</li>
+        <li>Honeymoon itinerary planning</li>
+        <li>Budget planning</li>
+        <li>Travel insurance information</li>
+        <li>Passport and visa requirements</li>
+        <li>Local customs and practical destination information</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your
+        individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £100
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+     
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package
+        for your honeymoon.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('disney-holiday', this)">
+    <span>Disney Holiday</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="disney-holiday">
+
+    <p>
+        Planning a Disney holiday can involve a huge amount of organisation, from deciding where to stay
+        and how to make the most of your time in the parks to understanding tickets, dining and transport.
+        Planning can be tailored around your family, budget and priorities to help you make the most of your Disney experience.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Accommodation research</li>
+        <li>On-site vs off-site accommodation options</li>
+        <li>Park and ticket options</li>
+        <li>Flights and transport</li>
+        <li>Airport transfers</li>
+        <li>Park planning and itinerary ideas</li>
+        <li>Character dining</li>
+        <li>Budget planning</li>
+        <li>Travel insurance information</li>
+        <li>Passport and visa requirements</li>
+        <li>Packing checklist</li>
+        <li>Practical tips for visiting Disney with children</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your
+        individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £125
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+     
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package
+        for your Disney holiday.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('solo-travel', this)">
+    <span>Solo Travel</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="solo-travel">
+
+    <p>
+        Travelling alone can be exciting and liberating, but planning everything yourself can sometimes
+        feel daunting. Whether you're looking for a relaxing escape, an adventure or a chance to explore
+        somewhere new, your planning can be tailored around you, to help you feel prepared for your trip.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Destination & accommodation research</li>
+        <li>Flights and transport options</li>
+        <li>Airport transfers and getting around</li>
+        <li>Excursions and day trips</li>
+        <li>Personalised itinerary</li>
+        <li>Budget planning</li>
+        <li>Travel insurance information</li>
+        <li>Passport and visa requirements</li>
+        <li>Packing checklist</li>
+        <li>Local customs and etiquette</li>
+        <li>Currency and spending information</li>
+        <li>Safety and practical travel information</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your
+        individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £75
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+     
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package
+        for your trip.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('cruise-planning', this)">
+    <span>Cruise Planning</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="cruise-planning">
+
+    <p>
+        With so many cruise lines, ships, itineraries, cabins and excursions to choose from, finding the
+        right cruise can quickly become overwhelming. Whether you're a first-time cruiser or simply want
+        help narrowing down the options, planning can be tailored around your preferences, budget and travel style.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Cruise line, ship and itinerary comparisons</li>
+        <li>Cabin research and recommendations</li>
+        <li>Flights and transport options</li>
+        <li>Excursion and shore activity research</li>
+        <li>Family-friendly or adult-focused options</li>
+        <li>Budget planning</li>
+        <li>Travel insurance information</li>
+        <li>Passport and visa requirements</li>
+        <li>Packing checklist</li>
+        <li>Port-day planning</li>
+        <li>Practical cruise tips and guidance</li>
+        <li>Local information for destinations and ports</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your
+        individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £100
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+     
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package
+        for your cruise.
+    </p>
+
+</div>
+
+
+        </div>
+
+
+        <button
+            class="package-category"
+            onclick="showPackages('occasions', this)"
+        >
+
+            <span>Special Occasions & Experiences</span>
+
+            <span class="package-arrow">+</span>
+
+        </button>
+
+
+        <div class="package-list" id="occasions">
+
+
+<button class="package-item" onclick="togglePackage('proposal-planning', this)">
+    <span>Proposal Planning</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="proposal-planning">
+
+    <p>
+        Planning the perfect proposal involves more than choosing the right moment. Whether you have a clear idea in mind or need help bringing everything together, planning can be tailored around your relationship, budget and the kind of proposal you want to create to help bring your proposal idea to life.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Proposal location research</li>
+        <li>Romantic experiences and ideas</li>
+        <li>Destination and accommodation research</li>
+        <li>Restaurants and special dining experiences</li>
+        <li>Photography and videography</li>
+        <li>Flowers and decorations</li>
+        <li>Entertainment</li>
+        <li>Proposal suppliers and services</li>
+        <li>Personalised touches and surprises</li>
+        <li>Transport and transfers</li>
+        <li>Budget planning</li>
+        <li>Booking information</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £100
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+
+      <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package for your proposal.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('anniversary-planning', this)">
+    <span>Anniversary Planning</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="anniversary-planning">
+
+    <p>
+        Whether you're celebrating your first anniversary or a significant milestone, finding something that feels personal and meaningful can take time and careful planning. Whether you have an idea in mind or are looking for inspiration, planning can be tailored around your relationship to help create an anniversary that feels personal and memorable.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Accommodation research</li>
+        <li>Romantic experiences and activities</li>
+        <li>Restaurants and special dining experiences</li>
+        <li>Spa and wellness experiences</li>
+        <li>Flowers and personalised touches</li>
+        <li>Surprise experiences</li>
+        <li>Photography</li>
+        <li>Entertainment</li>
+        <li>Itinerary and day planning</li>
+        <li>Special requests and arrangements</li>
+        <li>Budget planning</li>
+        <li>Seasonal and local event research</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £75
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package for your anniversary.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('birthday-celebrations', this)">
+    <span>Birthday Celebrations</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="birthday-celebrations">
+
+    <p>
+        Whether you're planning a child's birthday, a milestone celebration or a special birthday for a loved one, bringing all the details together can take more time than expected. From children's parties to Sweet 16s, 18ths, and 21sts to milestone birthdays throughout adulthood, planning can be tailored around the person you're celebrating, helping you turn your ideas into a celebration that feels personal and memorable.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Children's birthday party ideas and planning</li>
+        <li>Sweet 16 celebrations</li>
+        <li>18th and 21st birthdays</li>
+        <li>Milestone birthdays — 30th, 40th, 50th, 60th and beyond</li>
+        <li>Venue research</li>
+        <li>Party entertainment</li>
+        <li>Restaurants and special dining</li>
+        <li>Decorations and styling</li>
+        <li>Cakes and specialist suppliers</li>
+        <li>Photography and videography</li>
+        <li>Itinerary and timings</li>
+        <li>Budget planning</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £75
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package for your celebration.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('hen-stag-parties', this)">
+    <span>Hen & Stag Parties</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="hen-stag-parties">
+
+    <p>
+        Planning a hen or stag party often means coordinating different preferences, budgets, schedules and logistics across a group. Whether you're planning a relaxed day out, a full on day of activities or something completely different, planning can be tailored around the group, the guest of honour and the type of celebration you have in mind to help you bring the whole celebration together while keeping everyone organised.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Activity and experience research</li>
+        <li>Adventure and adrenaline activities</li>
+        <li>Spa and wellness experiences</li>
+        <li>Restaurants and group dining</li>
+        <li>Bars and nightlife</li>
+        <li>Entertainment</li>
+        <li>Themed activities and experiences</li>
+        <li>Group-friendly attractions and days out</li>
+        <li>Guest and group organisation</li>
+        <li>Itinerary and timings</li>
+        <li>Budget planning</li>
+        <li>Splitting costs and keeping track of group arrangements</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £125
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+     
+     <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package for your hen or stag celebration.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('baby-showers', this)">
+    <span>Baby Showers</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="baby-showers">
+
+    <p>
+        Planning a baby shower involves bringing together the venue, guests, food, activities and all the little details that make the occasion feel special. Whether you're planning an intimate gathering or a larger celebration, planning can be tailored around the guest of honour, helping you create a thoughtful celebration that everyone can enjoy.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Baby shower venue research</li>
+        <li>Restaurant, café and private dining options</li>
+        <li>Decorations and supplies</li>
+        <li>Catering and food options</li>
+        <li>Baby shower games and activities</li>
+        <li>Entertainment</li>
+        <li>Guest list and invitation organisation</li>
+        <li>Photography</li>
+        <li>Flowers and personalised touches</li>
+        <li>Budget planning</li>
+        <li>Itinerary and timings</li>
+        <li>Surprise shower planning</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £100
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+
+     <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package for your celebration.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('seasonal-activity-planning', this)">
+    <span>Seasonal Activity Planning</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="seasonal-activity-planning">
+
+    <p>
+        Keeping children and families entertained throughout school holidays and seasonal breaks can take a surprising amount of time and research. Whether you're looking for a few ideas for an upcoming school holiday or want activities planned across the whole season, options can be tailored around your location, budget, interests and the ages of those taking part, so you can make the most of the time off without having to search for ideas yourself.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Half-term planning</li>
+        <li>Summer holiday activities</li>
+        <li>Christmas and festive activities</li>
+        <li>Easter holiday activities</li>
+        <li>Seasonal events and attractions</li>
+        <li>Familyfriendly and age appropriate experiences</li>
+        <li>Local events and limited-time activities</li>
+        <li>Day trips and days out</li>
+        <li>Multi-day activity planning</li>
+        <li>Activity costs and practical information</li>
+        <li>Travel times and transport options</li>
+        <li>Booking information</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £75
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+ 
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package for your family and the time you have available.
+    </p>
+
+</div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ROUTINE -->
+
+
+    <div class="package-area">
+
+        <p class="package-area-label">ROUTINE</p>
+
+
+        <button
+            class="package-category"
+            onclick="showPackages('life', this)"
+        >
+
+            <span>Life & Family Organisation</span>
+
+            <span class="package-arrow">+</span>
+
+        </button>
+
+
+        <div class="package-list" id="life">
+
+
+<button class="package-item" onclick="togglePackage('family-organisation', this)">
+    <span>Family Organisation</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="family-organisation">
+
+    <p>
+        Keeping track of family schedules, appointments, activities and everyday commitments can quickly become difficult when everything is happening at once. Whatever you need help with, your package can be tailored around your household and priorities to help create a clearer system and making everyday organisation easier to manage.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Family calendar and diary organisation</li>
+        <li>Shared family schedules</li>
+        <li>School and nursery dates and deadlines</li>
+        <li>School organisation, including uniforms</li>
+        <li>Children's activities and clubs</li>
+        <li>Appointment organisation</li>
+        <li>Family routines and reminders</li>
+        <li>Family paperwork and administrative organisation</li>
+        <li>Checklists and organisational plans</li>
+        <li>Bespoke organisational documents</li>
+        <li>Bringing important family information together</li>
+        <li>Creating a clearer system for managing ongoing family administration</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £75
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+ 
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package for your family and priorities.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('new-baby-life-admin', this)">
+    <span>New Baby Life Admin</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="new-baby-life-admin">
+
+    <p>
+        Having a baby brings a whole new range of registrations, paperwork, appointments and practical decisions to manage alongside everything else. Whether you're preparing before your baby arrives or getting organised during those first few months, support can be tailored around your family and the level of help you need, making those early weeks and months feel a little more manageable.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Birth certificate guidance</li>
+        <li>GP registration</li>
+        <li>Dentist registration</li>
+        <li>Child Benefit</li>
+        <li>Vaccination and appointment organisation and reminders</li>
+        <li>Hospital checklists</li>
+        <li>Newborn and baby checklists</li>
+        <li>Baby-related paperwork and organisation</li>
+        <li>Creating a new family admin system</li>
+        <li>Changing bag organisation</li>
+        <li>Support with family admin during the first few weeks and months</li>
+        <li>Newborn photoshoot planning</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £75
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package for you and your family.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('life-admin-reset', this)">
+    <span>Life Admin Reset</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="life-admin-reset">
+
+    <p>
+        When everyday admin starts to build up, it can be difficult to know where to begin. Whether you've fallen behind on paperwork, have a backlog of appointments and renewals, or simply want to get everything back under control, support can be tailored around your priorities and the areas taking up the most time to create a clearer system for managing your ongoing life admin.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Organisation of income and expenditure</li>
+        <li>Bills, subscriptions and renewals</li>
+        <li>Calendar organisation for appointments, events and important occasions</li>
+        <li>Tracking important deadlines and renewal dates</li>
+        <li>MOT and vehicle tax reminders</li>
+        <li>Driving licence and passport renewal dates</li>
+        <li>Rent and mortgage contract end dates</li>
+        <li>Government support research</li>
+        <li>Pensions organisation</li>
+        <li>Organisation of personal information</li>
+        <li>Creating an ongoing life admin system</li>
+        <li>Creating a digital filing system for important paperwork</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £100
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package for you and the areas of life you'd like to get back under control.
+    </p>
+
+</div>
+
+
+        </div>
+
+
+        <button
+            class="package-category"
+            onclick="showPackages('relocation', this)"
+        >
+
+            <span>Home & Relocation</span>
+
+            <span class="package-arrow">+</span>
+
+        </button>
+
+
+        <div class="package-list" id="relocation">
+
+
+<button class="package-item" onclick="togglePackage('first-home-support', this)">
+    <span>First Home Support</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="first-home-support">
+
+    <p>
+        Buying your first home is a major milestone, but getting everything organised once the keys are yours can feel like another job in itself. Whether you need help getting the essentials set up, preparing for the move or getting your new-home administration under control, support can be tailored around your priorities and what you need to get settled.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Utilities and bills setup</li>
+        <li>Direct debit setup and payment dates</li>
+        <li>Keeping a record of suppliers, accounts and important details</li>
+        <li>Change of address</li>
+        <li>Home insurance research and policy comparison</li>
+        <li>Pre-move planning, including key dates and deadlines</li>
+        <li>Removal arrangements and storage</li>
+        <li>Repairs and outstanding jobs</li>
+        <li>New-home setup and settling in</li>
+        <li>Checking meter readings, utilities, heating and hot water</li>
+        <li>Organising household accounts and ongoing home administration</li>
+        <li>Creating a digital filing system for your home paperwork</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £150
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package for you and the stage of your move you're at.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('home-move-planning', this)">
+    <span>Home Move Planning</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="home-move-planning">
+
+    <p>
+        Moving home involves a lot of practical details, deadlines and arrangements that can be difficult to keep track of alongside everyday life. Whether you're moving locally or simply want help taking control of the admin, support can be tailored around your circumstances, priorities and how much help you need to stay on top of the move from preparation through to settling in.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Removal company research and comparison</li>
+        <li>Storage research and arrangements</li>
+        <li>Repairs and outstanding jobs before moving</li>
+        <li>Utilities and bills setup</li>
+        <li>Supplier research and comparison</li>
+        <li>Setting up or transferring utility accounts</li>
+        <li>Cancelling previous accounts</li>
+        <li>Change of address</li>
+        <li>Home insurance research and policy comparison</li>
+        <li>Appliance warranties, manuals and receipts</li>
+        <li>Household accounts and outstanding admin</li>
+        <li>Creating a digital filing system for important home paperwork</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £175
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package for you and the stage of your move you're at.
+    </p>
+
+</div>
+
+
+<button class="package-item" onclick="togglePackage('international-relocation', this)">
+    <span>International Relocation</span>
+    <span class="package-arrow">+</span>
+</button>
+
+<div class="package-details" id="international-relocation">
+
+    <p>
+        Relocating to another country can involve a huge amount of research, paperwork and practical planning, with requirements that can vary significantly depending on where you're moving. Whether you're relocating alone, as a couple or with your family, support can be tailored around your destination, circumstances and priorities, helping bring the many moving parts of an international move into one clear and manageable plan.
+    </p>
+
+    <h4>What we can help with:</h4>
+
+    <ul>
+        <li>Visa and immigration requirement research</li>
+        <li>Residency and registration requirements</li>
+        <li>Required documentation and application information</li>
+        <li>Driving and licensing requirements</li>
+        <li>Housing and accommodation research</li>
+        <li>International removal company and shipping research</li>
+        <li>Packing and moving organisation</li>
+        <li>Insurance research and requirements</li>
+        <li>Utilities and household services research</li>
+        <li>Banking and everyday financial administration</li>
+        <li>Healthcare registration research</li>
+        <li>Creating a digital filing system for relocation and home paperwork</li>
+    </ul>
+
+    <p class="package-note">
+        These are just some examples of what we can help with. Every package is tailored to your individual requirements, so your final package will be built around what you need help with.
+    </p>
+
+    <p class="package-price">
+        From £200
+    </p>
+
+    <p class="package-note">
+        Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+    </p>
+
+    <p class="package-enquiry">
+        Not sure how much help you need? Get in touch and we'll recommend the most suitable package for you and the stage of your relocation you're at.
+    </p>
+
+</div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Route & Routine. All rights reserved.</p>
+
+    <div class="footer-links">
+
+        <a href="privacy-policy.html">Privacy Policy</a>
+
+        <a href="terms.html">Terms & Conditions</a>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+function toggleMenu() {
+
+    document
+        .getElementById("navLinks")
+        .classList.toggle("active");
+
+}
+
+
+function showPackages(id, button) {
+
+    const selectedList =
+        document.getElementById(id);
+
+    const isAlreadyOpen =
+        selectedList.classList.contains("active");
+
+
+    const packageLists =
+        document.querySelectorAll(".package-list");
+
+    const categoryButtons =
+        document.querySelectorAll(".package-category");
+
+
+    packageLists.forEach(function(list) {
+
+        list.classList.remove("active");
+
+        list.querySelectorAll(".package-details").forEach(function(details) {
+
+            details.classList.remove("active");
+
+        });
+
+    });
+
+
+    categoryButtons.forEach(function(category) {
+
+        category.classList.remove("active");
+
+        category.querySelector(".package-arrow").textContent = "+";
+
+    });
+
+
+    document.querySelectorAll(".package-item").forEach(function(item) {
+
+        item.classList.remove("active");
+
+        item.querySelector(".package-arrow").textContent = "+";
+
+    });
+
+
+    if (!isAlreadyOpen) {
+
+        selectedList.classList.add("active");
+
+        button.classList.add("active");
+
+        button.querySelector(".package-arrow").textContent = "−";
+
+    }
+
+}
+
+
+function togglePackage(id, button) {
+
+    const selectedDetails =
+        document.getElementById(id);
+
+    const isAlreadyOpen =
+        selectedDetails.classList.contains("active");
+
+
+    const packageDetails =
+        document.querySelectorAll(".package-details");
+
+    const packageButtons =
+        document.querySelectorAll(".package-item");
+
+
+    packageDetails.forEach(function(details) {
+
+        details.classList.remove("active");
+
+    });
+
+
+    packageButtons.forEach(function(item) {
+
+        item.classList.remove("active");
+
+        item.querySelector(".package-arrow").textContent = "+";
+
+    });
+
+
+    if (!isAlreadyOpen) {
+
+        selectedDetails.classList.add("active");
+
+        button.classList.add("active");
+
+        button.querySelector(".package-arrow").textContent = "−";
+
+    }
+
+}
+window.addEventListener("DOMContentLoaded", function() {
+
+    const id = window.location.hash.substring(1);
+
+    if (!id) {
+        return;
+    }
+
+    const selectedList = document.getElementById(id);
+
+    if (!selectedList) {
+        return;
+    }
+
+    const button = document.querySelector(
+        '.package-category[onclick*="' + id + '"]'
+    );
+
+    if (!button) {
+        return;
+    }
+
+    selectedList.classList.add("active");
+
+    button.classList.add("active");
+
+    button.querySelector(".package-arrow").textContent = "−";
+
+    setTimeout(function() {
+
+window.scrollTo({
+    top: button.offsetTop - 100,
+    behavior: "smooth"
+});
+
+    }, 100);
+
+});
+
+</script>
+
+
+</body>
+
+</html>

@@ -1110,3 +1110,567 @@ footer{
     color: var(--forest-dark);
     text-decoration: none;
 }
+
+/* ==========================
+   PACKAGES
+========================== */
+
+.packages-intro {
+
+    padding: 70px 8% 30px;
+
+    text-align: center;
+
+}
+
+
+.packages-intro .section-title {
+
+    margin-bottom: 0;
+
+}
+
+
+.packages-intro h1 {
+
+    font-size: 52px;
+
+    margin-bottom: 16px;
+
+    color: var(--forest);
+
+}
+
+
+.packages-intro p {
+
+    max-width: 800px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    font-size: 18px;
+
+    color: var(--text);
+
+}
+
+
+.packages-section {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 30px 8% 80px;
+
+}
+
+
+.package-area {
+
+    margin-bottom: 55px;
+
+}
+
+
+.package-area-label {
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: .15em;
+
+    color: var(--forest);
+
+    margin-bottom: 12px;
+
+}
+
+
+.package-category {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 22px 26px;
+
+    margin-top: 12px;
+
+    background: white;
+
+    border: 1px solid #ececec;
+
+    border-radius: 18px;
+
+    color: var(--charcoal);
+
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+
+.package-category:hover {
+
+    border-color: var(--sage);
+
+    background: var(--stone);
+
+}
+
+
+.package-category.active {
+
+    color: var(--forest);
+
+}
+
+
+.package-arrow {
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+}
+
+
+.package-list {
+
+    display: none;
+
+    padding-top: 18px;
+
+}
+
+
+.package-list.active {
+
+    display: grid;
+
+    gap: 14px;
+
+}
+
+
+.package-card {
+
+    background: white;
+
+    padding: 24px 28px;
+
+    border-radius: 18px;
+
+    border: 1px solid #ececec;
+
+}
+
+
+.package-card h3 {
+
+    font-size: 21px;
+
+    color: var(--forest);
+
+    margin-bottom: 6px;
+
+}
+
+.package-item {
+
+    width: 96%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 18px 22px;
+
+    margin-top: 10px;
+
+    background: white;
+
+    border: 1px solid #ececec;
+
+    border-radius: 16px;
+
+    color: var(--charcoal);
+
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+
+.package-item:hover {
+
+    border-color: var(--sage);
+
+    background: var(--stone);
+
+}
+
+
+.package-item.active {
+
+    color: var(--forest);
+
+}
+
+
+.package-details {
+
+    display: none;
+
+    background: white;
+
+    padding: 24px 28px;
+
+    border: 1px solid #ececec;
+
+    border-top: none;
+
+    border-radius: 0 0 16px 16px;
+
+}
+
+
+.package-details.active {
+
+    display: block;
+
+}
+
+
+.package-details h4 {
+
+    margin-top: 24px;
+
+    margin-bottom: 12px;
+
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 18px;
+
+    color: var(--charcoal);
+
+}
+
+
+.package-details ul {
+
+    margin: 0 0 20px 20px;
+
+    color: var(--text);
+
+    line-height: 1.8;
+
+}
+
+
+.package-details li {
+
+    margin-bottom: 4px;
+
+}
+
+.package-card p {
+
+    font-size: 15px;
+
+    color: var(--text);
+
+}
+
+
+.package-note {
+
+    font-size: 14px !important;
+
+    line-height: 1.7;
+
+    margin-top: 20px;
+
+}
+
+
+.package-price {
+
+    font-family: "Quicksand", sans-serif;
+
+    font-size: 22px !important;
+
+    font-weight: 700;
+
+    color: var(--forest) !important;
+
+    margin-top: 20px;
+
+}
+
+
+.package-enquiry {
+
+    font-size: 15px !important;
+
+    margin-top: 8px;
+
+}
+
+@media(max-width:768px){
+
+    .packages-intro {
+
+        padding: 50px 8% 20px;
+
+    }
+
+
+    .packages-intro h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .packages-section {
+
+        padding: 20px 8% 60px;
+
+    }
+
+
+    .package-category {
+
+        font-size: 18px;
+
+        padding: 20px;
+
+    }
+
+
+    .package-card {
+
+        padding: 22px;
+
+    }
+
+}
+
+/* ==========================
+   PACKAGE TIERS
+========================== */
+
+.packages-intro h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 18px;
+
+    color: var(--charcoal);
+
+}
+
+
+.package-tiers {
+
+    max-width: 1000px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.package-tier {
+
+    background: white;
+
+    padding: 28px 24px;
+
+    border: 1px solid #ececec;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+}
+
+
+.package-tier h3 {
+
+    font-size: 24px;
+
+    color: var(--forest);
+
+    margin-bottom: 10px;
+
+}
+
+
+.package-tier p {
+
+    font-size: 15px;
+
+    color: var(--text);
+
+    margin: 0 auto;
+
+}
+
+
+.package-custom {
+
+    max-width: 800px;
+
+    margin: 45px auto 0;
+
+    padding: 28px 32px;
+
+    background: var(--stone);
+
+    border-radius: 20px;
+
+    text-align: center;
+
+}
+
+
+.package-custom h3 {
+
+    font-size: 22px;
+
+    color: var(--forest);
+
+    margin-bottom: 10px;
+
+}
+
+
+.package-custom p {
+
+    font-size: 16px;
+
+    color: var(--text);
+
+    margin: 0 auto;
+
+}
+
+
+/* ==========================
+   MOBILE PACKAGE TIERS
+========================== */
+
+@media(max-width:768px){
+
+    .packages-intro h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .package-tiers {
+
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+
+        margin-top: 30px;
+
+    }
+
+
+    .package-tier {
+
+        padding: 24px 22px;
+
+    }
+
+
+    .package-custom {
+
+        margin-top: 30px;
+
+        padding: 24px 20px;
+
+    }
+
+}
+
+/* ==========================
+   PACKAGE BUTTON
+========================== */
+
+.package-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 16px;
+
+    padding: 10px 20px;
+
+    background: var(--forest);
+
+    color: white;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: .25s;
+
+}
+
+
+.package-button:hover {
+
+    background: #24473D;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
