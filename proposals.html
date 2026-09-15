@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Proposal Planning | Route & Routine</title>
+
+    <meta
+    name="description"
+    content="Need help planning a proposal? Get personalised proposal planning and research, from locations and experiences to restaurants, accommodation and the special details that make the moment memorable."
+>
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Proposal Planning | Route & Routine">
+<meta property="og:description" content="Need help planning a proposal? Get personalised proposal planning and research, from locations and experiences to restaurants, accommodation and the special details that make the moment memorable.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://routeandroutine.co.uk/proposals.html">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="canonical" href="https://routeandroutine.co.uk/proposals.html">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <nav>
+
+        <h2 class="logo">
+            <a href="index.html">Route & Routine</a>
+        </h2>
+
+
+        <button
+            class="menu-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+
+        <div class="nav-links">
+
+            <a href="index.html#services">
+                Services
+            </a>
+
+            <a href="packages.html">
+                Packages
+            </a>
+
+            <a href="index.html#about-me">
+                About
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- ===================================== -->
+<!-- PAGE INTRO                            -->
+<!-- ===================================== -->
+
+<section class="service-page-intro reveal">
+
+    <div class="section-title">
+
+        <h1>
+            Proposal Planning
+        </h1>
+
+        <p>
+            Personalised planning and support to help you plan the perfect proposal.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ===================================== -->
+<!-- MAIN CONTENT                          -->
+<!-- ===================================== -->
+
+<section class="service-page-content reveal">
+
+    <div class="service-page-box">
+
+        <p>
+            Planning the perfect proposal involves more than choosing the right moment. Whether you have a clear idea in mind or need help bringing everything together, planning can be tailored around your relationship, budget and the kind of proposal you want to create to help bring your proposal idea to life.
+        </p>
+
+
+        <h2>
+            What we can help with:
+        </h2>
+
+
+        <ul class="service-page-list">
+
+            <li>Proposal location research</li>
+
+            <li>Romantic experiences and ideas</li>
+
+            <li>Destination and accommodation research</li>
+
+            <li>Restaurants and special dining experiences</li>
+
+            <li>Photography and videography</li>
+
+            <li>Flowers and decorations</li>
+
+            <li>Entertainment</li>
+
+            <li>Proposal suppliers and services</li>
+
+            <li>Personalised touches and surprises</li>
+
+            <li>Transport and transfers</li>
+
+            <li>Budget planning</li>
+
+            <li>Booking information</li>
+
+        </ul>
+
+
+        <p class="service-page-note">
+            These are just some examples of what we can help with. Every package is tailored to your individual requirements, so your final package will be built around what you need help with.
+        </p>
+
+
+        <p class="service-page-price">
+            From £100
+        </p>
+
+
+        <p>
+            Only need a little help? You don't need to book a full package. Individual tasks or smaller pieces of research can also be arranged and priced separately, so you can get help with exactly what you need.
+        </p>
+
+
+        <div class="service-page-cta">
+
+            <h2>
+                Ready to start planning?
+            </h2>
+
+            <p>
+                Not sure how much help you need? Get in touch and we'll recommend the most suitable package for your proposal.
+            </p>
+
+            <a href="index.html#contact" class="package-button">
+                Get in Touch
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===================================== -->
+<!-- FOOTER                                -->
+<!-- ===================================== -->
+
+<footer>
+
+    <p>
+        © 2026 Route & Routine
+    </p>
+
+    <p class="footer-links">
+
+        <a href="privacy-policy.html">
+            Privacy Policy
+        </a>
+
+        <span>
+            |
+        </span>
+
+        <a href="terms.html">
+            Terms & Conditions
+        </a>
+
+        <span>
+            |
+        </span>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </p>
+
+    <p class="cookie-note">
+        This website uses essential cookies only where required for functionality.
+    </p>
+
+</footer>
+
+
+<script>
+
+/* =====================================
+   MOBILE MENU
+===================================== */
+
+const menuToggle =
+    document.querySelector(".menu-toggle");
+
+const navLinks =
+    document.querySelector(".nav-links");
+
+
+menuToggle.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    const isOpen =
+        navLinks.classList.contains("active");
+
+
+    menuToggle.textContent =
+        isOpen ? "✕" : "☰";
+
+
+    menuToggle.setAttribute(
+        "aria-expanded",
+        isOpen
+    );
+
+});
+
+
+document
+    .querySelectorAll(".nav-links a")
+    .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navLinks.classList.remove("active");
+
+            menuToggle.textContent = "☰";
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        });
+
+    });
+
+
+/* =====================================
+   SCROLL ANIMATION
+===================================== */
+
+const reveals =
+    document.querySelectorAll(".reveal");
+
+
+function revealOnScroll() {
+
+    reveals.forEach(item => {
+
+        if (
+            item.getBoundingClientRect().top <
+            window.innerHeight - 100
+        ) {
+
+            item.classList.add("active");
+
+        }
+
+    });
+
+}
+
+
+window.addEventListener(
+    "scroll",
+    revealOnScroll
+);
+
+revealOnScroll();
+
+</script>
+
+
+</body>
+
+</html>
