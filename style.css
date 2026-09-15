@@ -1795,7 +1795,7 @@ footer{
 @media(max-width:768px){
 
     .service-page-intro {
-        padding: 50px 8% 25px;
+        padding: 50px 8% 20px;
     }
 
     .service-page-intro h1 {
@@ -1807,11 +1807,11 @@ footer{
     }
 
     .service-page-content {
-        padding: 15px 8% 60px;
+        padding: 20px 8% 60px;
     }
 
     .service-page-box {
-        padding: 28px 22px;
+        padding: 22px;
     }
 
     .service-page-box h2 {
@@ -1827,7 +1827,7 @@ footer{
     }
 
     .service-page-cta {
-        padding: 25px 20px;
+        padding: 22px 20px;
     }
 
 }
