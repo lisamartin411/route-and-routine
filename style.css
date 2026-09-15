@@ -1674,3 +1674,160 @@ footer{
     transform: translateY(-2px);
 
 }
+
+/* =====================================
+   INDIVIDUAL SERVICE / SEO PAGES
+===================================== */
+
+.service-page-intro {
+    padding: 70px 8% 35px;
+    text-align: center;
+}
+
+.service-page-intro .section-title {
+    margin-bottom: 0;
+}
+
+.service-page-intro h1 {
+    font-size: 52px;
+    margin-bottom: 16px;
+    color: var(--forest);
+}
+
+.service-page-intro p {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    color: var(--text);
+}
+
+
+.service-page-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 8% 80px;
+}
+
+
+.service-page-box {
+    background: white;
+    padding: 40px 45px;
+    border-radius: 20px;
+    border: 1px solid #ececec;
+}
+
+
+.service-page-box h2 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 28px;
+    color: var(--forest);
+    margin-bottom: 16px;
+}
+
+
+.service-page-box p {
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 24px;
+}
+
+
+.service-page-list {
+    margin: 0 0 25px 22px;
+    color: var(--text);
+    line-height: 1.8;
+}
+
+
+.service-page-list li {
+    margin-bottom: 5px;
+}
+
+
+.service-page-note {
+    font-size: 14px !important;
+    line-height: 1.7;
+    margin-top: 25px;
+}
+
+
+.service-page-price {
+    font-family: "Quicksand", sans-serif;
+    font-size: 24px !important;
+    font-weight: 700;
+    color: var(--forest) !important;
+    margin-top: 25px;
+    margin-bottom: 10px !important;
+}
+
+
+.service-page-cta {
+    margin-top: 40px;
+    padding: 30px 32px;
+    background: var(--stone);
+    border-radius: 18px;
+    text-align: center;
+}
+
+
+.service-page-cta h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+.service-page-cta p {
+    max-width: 650px;
+    margin: 0 auto 20px;
+}
+
+
+.service-page-cta .package-button {
+    display: inline-block;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media(max-width:768px){
+
+    .service-page-intro {
+        padding: 50px 8% 25px;
+    }
+
+    .service-page-intro h1 {
+        font-size: 40px;
+    }
+
+    .service-page-intro p {
+        font-size: 16px;
+    }
+
+    .service-page-content {
+        padding: 15px 8% 60px;
+    }
+
+    .service-page-box {
+        padding: 28px 22px;
+    }
+
+    .service-page-box h2 {
+        font-size: 24px;
+    }
+
+    .service-page-box p {
+        font-size: 15px;
+    }
+
+    .service-page-list {
+        margin-left: 20px;
+    }
+
+    .service-page-cta {
+        padding: 25px 20px;
+    }
+
+}
