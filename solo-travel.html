@@ -35,23 +35,39 @@
 
 <header>
     <nav>
-        <h2 class="logo">
-            <a href="index.html">Route & Routine</a>
-        </h2>
+
+        <div class="logo">
+
+            <a href="index.html">
+
+                <img src="favicon.png" alt="Route & Routine logo">
+
+                <span>Route & Routine</span>
+
+            </a>
+
+        </div>
 
         <button
             class="menu-toggle"
-            aria-label="Open navigation menu"
-            aria-expanded="false">
+            aria-label="Open menu"
+            onclick="toggleMenu()"
+        >
             ☰
         </button>
 
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+
             <a href="index.html#services">Services</a>
+
             <a href="packages.html">Packages</a>
+
             <a href="index.html#about-me">About</a>
+
             <a href="index.html#contact">Contact</a>
+
         </div>
+
     </nav>
 </header>
 
