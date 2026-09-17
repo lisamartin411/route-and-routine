@@ -3,14 +3,36 @@
 
 <head>
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT8ZZ804E"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+(function() {
 
-  gtag('config', 'G-CPT8ZZ804E');
+    const consent = localStorage.getItem("routeRoutineAnalyticsConsent");
+
+    if (consent === "accepted") {
+
+        const script = document.createElement("script");
+
+        script.async = true;
+        script.src =
+            "https://www.googletagmanager.com/gtag/js?id=G-CPT8ZZ804E";
+
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        window.gtag = gtag;
+
+        gtag("js", new Date());
+
+        gtag("config", "G-CPT8ZZ804E");
+
+    }
+
+})();
 </script>
 
 <meta charset="UTF-8">
@@ -824,6 +846,116 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 
 </script>
+
+<script>
+(function() {
+
+    const banner = document.getElementById("cookie-banner");
+    const acceptButton = document.getElementById("cookie-accept");
+    const rejectButton = document.getElementById("cookie-reject");
+
+    const consent =
+        localStorage.getItem("routeRoutineAnalyticsConsent");
+
+    function loadAnalytics() {
+
+        if (window.gtag) {
+            return;
+        }
+
+        const script = document.createElement("script");
+
+        script.async = true;
+        script.src =
+            "https://www.googletagmanager.com/gtag/js?id=G-CPT8ZZ804E";
+
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        window.gtag = gtag;
+
+        gtag("js", new Date());
+
+        gtag("config", "G-CPT8ZZ804E");
+    }
+
+    if (consent === "accepted") {
+
+        banner.style.display = "none";
+        loadAnalytics();
+
+    } else if (consent === "rejected") {
+
+        banner.style.display = "none";
+
+    }
+
+    acceptButton.addEventListener("click", function() {
+
+        localStorage.setItem(
+            "routeRoutineAnalyticsConsent",
+            "accepted"
+        );
+
+        banner.style.display = "none";
+
+        loadAnalytics();
+
+    });
+
+    rejectButton.addEventListener("click", function() {
+
+        localStorage.setItem(
+            "routeRoutineAnalyticsConsent",
+            "rejected"
+        );
+
+        banner.style.display = "none";
+
+    });
+
+})();
+</script>
+
+<!-- Cookie Consent Banner -->
+
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie preferences">
+
+<div class="cookie-banner-content">
+
+    <div class="cookie-banner-text">
+
+        <h3>We use analytics</h3>
+
+        <p>
+            We use Google Analytics to understand how visitors use our website
+            and improve our services. You can choose whether to allow analytics.
+            See our <a href="privacy-policy.html">Privacy Policy</a> for more information.
+        </p>
+
+    </div>
+
+    <div class="cookie-banner-buttons">
+
+        <button type="button" class="cookie-reject" id="cookie-reject">
+            Reject
+        </button>
+
+        <button type="button" class="cookie-accept" id="cookie-accept">
+            Accept
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
 
 </body>
 
