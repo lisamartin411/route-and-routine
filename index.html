@@ -641,16 +641,17 @@ Contact
             |
         </span>
 
-        <a href="#contact">
+        <a href="index.html#contact">
             Contact
         </a>
 
     </p>
 
     <p class="cookie-note">
-
-        This website uses essential cookies only where required for functionality.
-
+        We use essential cookies for website functionality and, with your permission, optional analytics.
+        <a href="#" id="cookie-preferences">
+            Cookie preferences
+        </a>
     </p>
 
 </footer>
@@ -918,6 +919,21 @@ window.addEventListener("DOMContentLoaded", function() {
         banner.style.display = "none";
 
     });
+
+    const cookiePreferences =
+        document.getElementById("cookie-preferences");
+
+    if (cookiePreferences) {
+
+        cookiePreferences.addEventListener("click", function(event) {
+
+            event.preventDefault();
+
+            banner.style.display = "block";
+
+        });
+
+    }
 
 });
 </script>

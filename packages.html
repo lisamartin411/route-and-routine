@@ -897,15 +897,40 @@
 
 <footer>
 
-    <p>© 2026 Route & Routine. All rights reserved.</p>
+    <p>
+        © 2026 Route & Routine
+    </p>
 
-    <div class="footer-links">
+    <p class="footer-links">
 
-        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="privacy-policy.html">
+            Privacy Policy
+        </a>
 
-        <a href="terms.html">Terms & Conditions</a>
+        <span>
+            |
+        </span>
 
-    </div>
+        <a href="terms.html">
+            Terms & Conditions
+        </a>
+
+        <span>
+            |
+        </span>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </p>
+
+    <p class="cookie-note">
+        We use essential cookies for website functionality and, with your permission, optional analytics.
+        <a href="#" id="cookie-preferences">
+            Cookie preferences
+        </a>
+    </p>
 
 </footer>
 
@@ -1104,6 +1129,8 @@ window.scrollTo({
 
 const cookieBanner = document.getElementById("cookie-banner");
 
+const cookiePreferences = document.getElementById("cookie-preferences");
+
 const consent = localStorage.getItem("routeRoutineAnalyticsConsent");
 
 
@@ -1144,6 +1171,18 @@ document.getElementById("cookie-reject").addEventListener("click", function() {
     cookieBanner.style.display = "none";
 
 });
+
+if (cookiePreferences) {
+
+    cookiePreferences.addEventListener("click", function(e) {
+
+        e.preventDefault();
+
+        cookieBanner.style.display = "block";
+
+    });
+
+}
 
 </script>
 

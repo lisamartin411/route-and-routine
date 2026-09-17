@@ -3,14 +3,35 @@
 
 <head>
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT8ZZ804E"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+(function() {
 
-  gtag('config', 'G-CPT8ZZ804E');
+    const consent = localStorage.getItem("routeRoutineAnalyticsConsent");
+
+    if (consent === "accepted") {
+
+        const script = document.createElement("script");
+
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-CPT8ZZ804E";
+
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        window.gtag = gtag;
+
+        gtag("js", new Date());
+
+        gtag("config", "G-CPT8ZZ804E");
+
+    }
+
+})();
 </script>
 
     <meta charset="UTF-8">
@@ -136,17 +157,42 @@
 </section>
 
 <footer>
-    <p>© 2026 Route & Routine</p>
+
+    <p>
+        © 2026 Route & Routine
+    </p>
+
     <p class="footer-links">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <span>|</span>
-        <a href="terms.html">Terms & Conditions</a>
-        <span>|</span>
-        <a href="index.html#contact">Contact</a>
+
+        <a href="privacy-policy.html">
+            Privacy Policy
+        </a>
+
+        <span>
+            |
+        </span>
+
+        <a href="terms.html">
+            Terms & Conditions
+        </a>
+
+        <span>
+            |
+        </span>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
     </p>
+
     <p class="cookie-note">
-        This website uses essential cookies only where required for functionality.
+        We use essential cookies for website functionality and, with your permission, optional analytics.
+        <a href="#" id="cookie-preferences">
+            Cookie preferences
+        </a>
     </p>
+
 </footer>
 
 <script>
