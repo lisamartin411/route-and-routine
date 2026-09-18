@@ -3,16 +3,6 @@
 
 <head>
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT8ZZ804E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CPT8ZZ804E');
-</script>
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -233,95 +223,7 @@
 
 </footer>
 
-
-<script>
-
-/* =====================================
-   MOBILE MENU
-===================================== */
-
-const menuToggle =
-    document.querySelector(".menu-toggle");
-
-const navLinks =
-    document.querySelector(".nav-links");
-
-
-menuToggle.addEventListener("click", () => {
-
-    navLinks.classList.toggle("active");
-
-    const isOpen =
-        navLinks.classList.contains("active");
-
-
-    menuToggle.textContent =
-        isOpen ? "✕" : "☰";
-
-
-    menuToggle.setAttribute(
-        "aria-expanded",
-        isOpen
-    );
-
-});
-
-
-document
-    .querySelectorAll(".nav-links a")
-    .forEach(link => {
-
-        link.addEventListener("click", () => {
-
-            navLinks.classList.remove("active");
-
-            menuToggle.textContent = "☰";
-
-            menuToggle.setAttribute(
-                "aria-expanded",
-                "false"
-            );
-
-        });
-
-    });
-
-
-/* =====================================
-   SCROLL ANIMATION
-===================================== */
-
-const reveals =
-    document.querySelectorAll(".reveal");
-
-
-function revealOnScroll() {
-
-    reveals.forEach(item => {
-
-        if (
-            item.getBoundingClientRect().top <
-            window.innerHeight - 100
-        ) {
-
-            item.classList.add("active");
-
-        }
-
-    });
-
-}
-
-
-window.addEventListener(
-    "scroll",
-    revealOnScroll
-);
-
-revealOnScroll();
-
-</script>
-
+<script src="script.js"></script>
 
 </body>
 

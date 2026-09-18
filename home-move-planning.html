@@ -3,16 +3,6 @@
 
 <head>
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPT8ZZ804E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-CPT8ZZ804E');
-</script>
-
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -322,8 +312,141 @@ revealOnScroll();
 
 </script>
 
+<!-- Cookie Consent Banner -->
+
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie preferences">
+
+    <div class="cookie-banner-content">
+
+        <div class="cookie-banner-text">
+
+            <h3>We use analytics</h3>
+
+            <p>
+                We use Google Analytics to understand how visitors use our website
+                and improve our services. You can choose whether to allow analytics.
+                See our <a href="privacy-policy.html">Privacy Policy</a> for more information.
+            </p>
+
+        </div>
+
+
+        <div class="cookie-banner-buttons">
+
+            <button type="button" class="cookie-reject" id="cookie-reject">
+                Reject
+            </button>
+
+            <button type="button" class="cookie-accept" id="cookie-accept">
+                Accept
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+const cookieBanner = document.getElementById("cookie-banner");
+
+const consent = localStorage.getItem("routeRoutineAnalyticsConsent");
+
+
+if (!consent) {
+
+    cookieBanner.style.display = "block";
+
+} else {
+
+    cookieBanner.style.display = "none";
+
+}
+
+
+document.getElementById("cookie-accept").addEventListener("click", function() {
+
+    localStorage.setItem(
+        "routeRoutineAnalyticsConsent",
+        "accepted"
+    );
+
+    cookieBanner.style.display = "none";
+
+    location.reload();
+
+});
+
+
+document.getElementById("cookie-reject").addEventListener("click", function() {
+
+    localStorage.setItem(
+        "routeRoutineAnalyticsConsent",
+        "rejected"
+    );
+
+    cookieBanner.style.display = "none";
+
+});
+
+
+document.getElementById("cookie-preferences").addEventListener("click", function(e) {
+
+    e.preventDefault();
+
+    cookieBanner.style.display = "block";
+
+});
+
+</script>
 
 </body>
 
 </html>
-```
+<footer>
+
+    <p>
+        © 2026 Route & Routine
+    </p>
+
+    <p class="footer-links">
+
+        <a href="privacy-policy.html">
+            Privacy Policy
+        </a>
+
+        <span>
+            |
+        </span>
+
+        <a href="terms.html">
+            Terms & Conditions
+        </a>
+
+        <span>
+            |
+        </span>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </p>
+
+    <p class="cookie-note">
+        We use essential cookies for website functionality and, with your permission, optional analytics.
+        <a href="#" id="cookie-preferences">
+            Cookie preferences
+        </a>
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
