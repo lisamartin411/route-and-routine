@@ -417,6 +417,65 @@ function initialiseMobileMenu() {
 
 }
 
+/* =====================================
+   PACKAGE DROPDOWNS
+===================================== */
+
+function showPackages(id, button) {
+
+    const allLists =
+        document.querySelectorAll(".package-list");
+
+    allLists.forEach(list => {
+
+        list.style.display = "none";
+
+    });
+
+
+    const selectedList =
+        document.getElementById(id);
+
+    if (selectedList) {
+
+        selectedList.style.display = "block";
+
+    }
+
+}
+
+
+function togglePackage(id, button) {
+
+    const details =
+        document.getElementById(id);
+
+    if (!details) {
+
+        return;
+
+    }
+
+
+    const isOpen =
+        details.style.display === "block";
+
+
+    details.style.display =
+        isOpen ? "none" : "block";
+
+
+    const arrow =
+        button.querySelector(".package-arrow");
+
+    if (arrow) {
+
+        arrow.textContent =
+            isOpen ? "+" : "−";
+
+    }
+
+}
 
 /* =====================================
    PACKAGE HASH LINKS
