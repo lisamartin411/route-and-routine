@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lisa | Route & Routine</title>
+
+    <meta name="description"
+        content="Connect with Lisa at Route & Routine for thoughtful support with travel planning, special occasions and everyday life organisation.">
+
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="icon" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* ------------------------------
+           COLOUR VARIABLES
+        ------------------------------ */
+
+        :root {
+            --forest: #54695E;
+            --sage: #C6D0C4;
+            --cream: #FBFAF7;
+            --stone: #F3F5F2;
+            --text: #35443B;
+            --white: #FFFFFF;
+        }
+
+
+        /* ------------------------------
+           GENERAL STYLING
+        ------------------------------ */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--cream);
+            color: var(--text);
+            font-family: "Nunito", sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* ------------------------------
+           MAIN CARD
+        ------------------------------ */
+
+        .card-container {
+            width: 100%;
+            max-width: 520px;
+            margin: 0 auto;
+            padding: 30px 20px 20px;
+            text-align: center;
+        }
+
+
+        /* ------------------------------
+           LOGO
+        ------------------------------ */
+
+        .logo {
+            width: 95px;
+            height: 95px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+
+        /* ------------------------------
+           HEADINGS
+        ------------------------------ */
+
+        h1 {
+            margin: 0;
+            color: var(--forest);
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .business-name {
+            margin-top: 3px;
+            color: var(--forest);
+            font-size: 1.2rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            max-width: 420px;
+            margin: 20px auto 30px;
+            color: var(--text);
+            font-size: 1rem;
+        }
+
+
+        /* ------------------------------
+           BUTTONS
+        ------------------------------ */
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 20px;
+        }
+
+.card-button {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--sage);
+    background-color: var(--sage);
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.card-button:hover {
+    background-color: var(--forest);
+    color: var(--white);
+}
+
+.card-button.secondary {
+    background-color: var(--sage);
+    color: var(--text);
+}
+
+.card-button.secondary:hover {
+    background-color: var(--forest);
+    color: var(--white);
+}
+
+        /* ------------------------------
+           FOOTER
+        ------------------------------ */
+
+        footer {
+            margin-top: 30px;
+            padding: 20px 0 5px;
+            color: var(--forest);
+            font-size: 0.8rem;
+        }
+
+
+        /* ------------------------------
+           MOBILE STYLING
+        ------------------------------ */
+
+        @media (max-width: 480px) {
+
+            .card-container {
+                padding: 25px 18px 15px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .business-name {
+                font-size: 1.1rem;
+            }
+
+            .tagline {
+                font-size: 0.95rem;
+            }
+
+            .card-button {
+                padding: 14px 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <main class="card-container">
+
+        <!-- LOGO -->
+
+        <img
+            src="favicon.png"
+            alt="Route & Routine logo"
+            class="logo"
+        >
+
+
+        <!-- BUSINESS NAME -->
+
+        <h1>Lisa</h1>
+
+        <div class="business-name">
+            Route & Routine
+        </div>
+
+
+        <!-- INTRODUCTION -->
+
+        <p class="tagline">
+            Creating more time for what matters.
+            Thoughtful support with travel planning,
+            special occasions and everyday life organisation.
+        </p>
+
+
+        <!-- MAIN BUTTONS -->
+
+        <div class="button-container">
+
+            <a
+                href="index.html#contact"
+                class="card-button"
+            >
+                Get in Touch
+            </a>
+
+
+            <a
+                href="packages.html"
+                class="card-button secondary"
+            >
+                Explore Services &amp; Packages
+            </a>
+
+
+            <a
+                href="mailto:routeandroutine@gmail.com"
+                class="card-button secondary"
+            >
+                Email Route & Routine
+            </a>
+
+
+            <a
+                href="https://routeandroutine.co.uk/"
+                class="card-button secondary"
+            >
+                Visit Website
+            </a>
+
+        </div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    Route &amp; Routine
+
+    <br>
+
+    Creating more time for what matters.
+
+    <br><br>
+
+    <a href="https://routeandroutine.co.uk/privacy-policy.html">
+        Privacy Policy
+    </a>
+
+</footer>
+
+</main>
+
+</body>
+
+</html>
