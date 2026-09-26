@@ -47,7 +47,7 @@ h2,
 h3,
 .logo {
 
-    font-family: "Quicksand", sans-serif;
+    font-family: "Nunito", sans-serif;
 
     font-weight: 700;
 
@@ -1214,7 +1214,7 @@ footer{
 
     color: var(--charcoal);
 
-    font-family: "Quicksand", sans-serif;
+    font-family: "Nunito", sans-serif;
 
     font-size: 20px;
 
@@ -1317,7 +1317,7 @@ footer{
 
     color: var(--charcoal);
 
-    font-family: "Quicksand", sans-serif;
+    font-family: "Nunito", sans-serif;
 
     font-size: 18px;
 
@@ -1378,7 +1378,7 @@ footer{
 
     margin-bottom: 12px;
 
-    font-family: "Quicksand", sans-serif;
+    font-family: "Nunito", sans-serif;
 
     font-size: 18px;
 
@@ -1426,7 +1426,7 @@ footer{
 
 .package-price {
 
-    font-family: "Quicksand", sans-serif;
+    font-family: "Nunito", sans-serif;
 
     font-size: 22px !important;
 
@@ -1721,7 +1721,7 @@ footer{
 
 
 .service-page-box h2 {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 28px;
     color: var(--forest);
     margin-bottom: 16px;
@@ -1755,7 +1755,7 @@ footer{
 
 
 .service-page-price {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 24px !important;
     font-weight: 700;
     color: var(--forest) !important;
@@ -1865,7 +1865,7 @@ flex: 1;
 
 .cookie-banner-text h3 {
 margin: 0 0 6px;
-font-family: 'Quicksand', sans-serif;
+font-family: 'Nunito', sans-serif;
 color: #54695E;
 font-size: 1.1rem;
 }
